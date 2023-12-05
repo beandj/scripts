@@ -1,0 +1,11 @@
+DELETE FROM trends WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM alerts WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM acknowledges WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM events WHERE WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM history WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM history_uint WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM history_str WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM history_text WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM history_log WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM trends WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
+DELETE FROM trends_uint WHERE to_timestamp(clock) < NOW() - INTERVAL '7 days';
