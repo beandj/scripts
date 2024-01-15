@@ -1,7 +1,14 @@
 #!/bin/bash
+#
+# from: https://stackoverflow.com/questions/65676173/is-there-easy-way-to-delete-all-resources-in-oracle-cloud-infrastructure-compart
+# Editar:
+# OCI_TENANCY_NAME=<Ur Teanncy Name>
+# OCI_TENANCY_OCID=<tenancy ocid>
+# Execitar: delete_all_compartment.sh <compartment-oicd>
+#
 delcmpt(){
-    OCI_TENANCY_NAME=beandj
-    OCI_TENANCY_OCID=ocid1.tenancy.oc1..aaaaaaaahzj6k4zewbzoejvszaaes2protjctvs6xh3ml2e7bszzf3vqbqkq
+    OCI_TENANCY_NAME=<Ur Teanncy Name>
+    OCI_TENANCY_OCID=<tenancy ocid>
     OCI_CMPT_ID=$1 #OCID for cmpt to be deleted, passed as argument
 
     OCI_CMPT_NAME=$(oci iam compartment get -c ${OCI_CMPT_ID} | jq  '.data.name')
