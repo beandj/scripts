@@ -4,7 +4,7 @@
 # Editar:
 # OCI_TENANCY_NAME=<Ur Teanncy Name>
 # OCI_TENANCY_OCID=<tenancy ocid>
-# Execitar: delete_all_compartment.sh <compartment-oicd>
+# Executar: ./delete_all_compartment.sh <compartment-oicd>
 #
 delcmpt(){
     OCI_TENANCY_NAME=<Ur Teanncy Name>
